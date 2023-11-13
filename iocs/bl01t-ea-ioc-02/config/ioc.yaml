@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://github.com/epics-containers/ioc-adsimdetector/releases/download/2023.11.1/ibek.ioc.schema.json
+
+ioc_name: bl01t-ea-ioc-02
+description: Example simulated camera for BL01T
+
+entities:
+
+- type: ADSimDetector.simDetector
+  PORT: DET.DET
+  P: BL01T-EA-TST-02
+  R: ":DET:"
+- type: ADCore.NDPvaPlugin
+  PORT: DET.PVA
+  PVNAME: BL01T-EA-TST-02:PVA:OUTPUT
+  P: BL01T-EA-TST-02
+  R: ":PVA:"
+  NDARRAY_PORT: DET.DET
