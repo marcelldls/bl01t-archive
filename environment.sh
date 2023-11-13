@@ -19,7 +19,7 @@ echo "Loading IOC environment for blxxi ..."
 # use spaces to separate multiple mappings
 export EC_REGISTRY_MAPPING='github.com=ghcr.io'
 # the namespace to use for kubernetes deployments - leave blank for local docker
-export EC_K8S_NAMESPACE=
+export EC_K8S_NAMESPACE=local
 # the git repo for this beamline (or accelerator domain)
 export EC_DOMAIN_REPO=git@github.com:marcelldls/bl01t
 # declare your centralised log server Web UI
