@@ -15,3 +15,5 @@ entities:
   P: BL01T-EA-TST-02
   R: ":PVA:"
   NDARRAY_PORT: DET.DET
+- type: epics.StartupCommand
+  command: dbLoadRecords(config/extra.db)

@@ -1,0 +1,6 @@
+record(ai, "BL01T-EA-IOC-02:TEST") {
+   field(DESC, "Test record")
+   field(DTYP, "Soft Channel")
+   field(SCAN, "Passive")
+   field(VAL, "1")
+}
